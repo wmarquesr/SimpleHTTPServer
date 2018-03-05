@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
 import http.client
+import sys
 
 # get http server ip
-http_server = "127.0.0.1"
+#http_server = "127.0.0.1"
+http_server = sys.argv[1]
 # create a connection
 conn = http.client.HTTPConnection(http_server)
 
